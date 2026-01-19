@@ -103,8 +103,7 @@ def stage_mode_select():
     if c1.button("🃏 Cards"): S.mode='cards'; S.stage='new_round'; rerun()
     if c2.button("🎲 Dice"):  S.mode='dice';  S.stage='new_round'; rerun()
     st.markdown(" ")                               # small spacer
-    banner_path = Path(__file__).parent / "meme.png"
-    st.image(str(banner_path), use_container_width=True)
+
 
 def stage_new_round():
     S.round_no += 1
